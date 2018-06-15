@@ -1,0 +1,154 @@
+/* GRILLA CONFIG *************************************************************/
+.row {
+    box-sizing: border-box;
+    clear: both;
+    overflow: hidden;
+}
+
+.cell-60 {
+    float: left;
+    box-sizing: border-box;
+
+    width: 60%;
+}
+
+.cell-40 {
+    float: left;
+    box-sizing: border-box;
+
+    width: 40%;
+}
+
+/* GENERAL *******************************************************************/
+body {
+    margin: 0px;
+    /*padding: 100px 150px;*/
+
+    background-color: #EDEDED;
+}
+
+p span {
+    color: #EF553E;
+}
+
+p.titulo {
+    font-size: 20px;
+}
+
+p.subtitulo {
+    font-weight: bold;
+}
+
+h3 {
+    margin-left: 10px;
+    color: #EF553E;
+}
+
+.container {
+    margin: 100px 150px;
+    background-color: #FFF;
+}
+
+
+/* HEADER ********************************************************************/
+header {
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+/* TODO: HACER FLOTAR LA IMAGEN */
+/*
+header .transparente {
+    width: 100%;
+    height: 50px;
+
+    background-color: #EDEDED;
+}
+*/
+
+header .img {
+    border-radius: 50%;
+    border: solid 5px #EDEDED;
+
+    width: 100px;
+    height: auto;
+}
+
+header .linea_divisora {
+    margin-left: 5%;
+    width: 90%;
+    height: 5px;
+
+    background-color: #EDEDED;
+}
+
+/* ACERCA *********************************************************************/
+.acerca {
+    text-align: justify;
+}
+
+.acerca p {
+    margin: 10px;
+}
+/* CONTACTO *******************************************************************/
+/* EDUCACIÓN ******************************************************************/
+.educacion .bloque_educacion {
+    box-sizing: border-box;
+}
+
+.educacion .bloque_educacion p {
+    margin: 0;
+}
+.educacion .bloque_educacion div {
+    display: inline-block;
+}
+.educacion .bloque_educacion .estudio_anno {
+    float: left;
+    width: 10%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.educacion .bloque_educacion .estudio_descripcion {
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #EEE;
+}
+
+/* SKILLS *********************************************************************/
+.skills ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+}
+
+.skills li {
+    padding-left: 5px;
+    margin-bottom: 5px;
+    color: #FFF;
+}
+.skills li.per100 {
+    width: 100%;
+    background-color: #EF553E;
+}
+
+.skills li.per90 {
+    width: 90%;
+    background-color: #EF553E;
+}
+
+.skills li.per70 {
+    width: 70%;
+    background-color: #EF553E;
+}
+
+.skills li.per40 {
+    width: 40%;
+    background-color: #EF553E;
+}
+
+.skills li.per25 {
+    width: 25%;
+    background-color: #EF553E;
+}
