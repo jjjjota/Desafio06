@@ -5,31 +5,34 @@
     <meta charset="utf-8">
     <title>Currículo</title>
     <link rel="stylesheet" href="style.css">
-    <!-- TODO: ADD FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<img class="img" src="white_flowers.jpg" alt="">
 <div class="container">
 
     <header>
-        <div class="transparente"></div>
-        <img class="img" src="white_flowers.jpg" alt="">
         <p class="titulo">HOLA MI NOMBRE ES <span>MIGUEL</span> Y ESTE ES MI RESUMEN</p>
-        <div class="linea_divisora"></div>
+        <div class="double_line"></div>
     </header>
 
     <!-- Fila 1-->
-    <div class="row">
+    <div class="row fila1">
 
         <!-- Columna 1-->
         <section class="cell-60 acerca">
-            <h3>// ACERCA DE</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="subtitulo">// ACERCA DE</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, non, dolorem, cumque distinctio magni quam expedita
+                velit laborum sunt amet facere tempora ut fuga aliquam ad
+                asperiores voluptatem dolorum! Quasi.</p>
         </section>
 
         <!-- Columna 2-->
         <section class="cell-40 contacto">
-            <h3>// CONTACTO</h3>
+            <p class="subtitulo">// CONTACTO</p>
             <ul>
                 <li><b>Email:</b> miguel@ewok.cl</li>
                 <li><b>Skype:</b> miguelcantillana</li>
@@ -45,33 +48,48 @@
 
         <!-- Columna 1-->
         <section class="cell-60 educacion">
-            <h3>// EDUCACIÓN</h3>
+            <p class="subtitulo">// EDUCACIÓN</p>
 
-                <div class="bloque_educacion">
-                    <div class="estudio_anno subtitulo">2012</div>
-                    <div class="triangulo"></div>
-                    <div class="estudio_descripcion">
-                        <p class="subtitulo">I was born in Katowice</p>
-                        <p class="cuerpo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sapiente, exercitationem, totam, dolores iste dolore est aut modi. </p>
-                    </div>
+            <!-- Educación 1 -->
+            <p class="estudio_anno subsubtitulo">
+                2012
+            </p>
+            <div class="estudio_descripcion">
+                <div class="triangulo"></div>
+                <div class="cuadrado">
+                    <p class="subsubtitulo">
+                        I was born in Katowice
+                    </p>
+                    <p class="cuerpo">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+                        Sapiente, exercitationem, totam, dolores iste dolore est aut modi.
+                    </p>
                 </div>
+            </div>
 
-                <div class="bloque_educacion">
-                    <div class="estudio_anno subtitulo">2012</div>
-                    <div class="triangulo"></div>
-                    <div class="estudio_descripcion">
-                        <p class="subtitulo">I was born in Katowice</p>
-                        <p class="cuerpo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sapiente, exercitationem, totam, dolores iste dolore est aut modi. </p>
-                    </div>
+            <div class="clear margin"></div>
+            <!-- Educación 2-->
+            <p class="estudio_anno subsubtitulo">
+                2012
+            </p>
+            <div class="estudio_descripcion">
+                <div class="triangulo"></div>
+                <div class="cuadrado">
+                    <p class="subsubtitulo">
+                        I was born in Katowice
+                    </p>
+                    <p class="cuerpo">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+                        Sapiente, exercitationem, totam, dolores iste dolore est aut modi.
+                    </p>
                 </div>
+            </div>
 
         </section>
 
         <!-- Columna 2-->
         <section class="cell-40 skills">
-            <h3>// SKILLS</h3>
+            <p class="subtitulo">// SKILLS</p>
             <ul>
                 <li class="per100">PYTHON</li>
                 <li class="per90">HTML</li>
@@ -88,46 +106,90 @@
 
         <!-- Columna 1-->
         <section class="cell-60 experiencia">
-            <h3>// EXPERIENCIA</h3>
+            <p class="subtitulo">// EXPERIENCIA</p>
 
             <!-- experiencia 1-->
-            <div class="cargo-empresa">
-                <p class="subtitulo">Google</p>
-                <p>2013-2014</p>
+            <div class="cargo_empresa">
+                <p class="subsubtitulo">Google</p>
+                <p class="subsubsubtitulo">2013-2014</p>
             </div>
-            <div class="cargo-descripcion">
-                <p class="subtitulo">Front-end developer / php programmer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="cargo_descripcion">
+                <p class="subsubtitulo">
+                    Front-end developer / php programmer
+                </p>
+                <p class="cuerpo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ullam, et, illum perferendis veritatis velit sunt similique
+                    qui magni totam harum tempore eius laboriosam accusantium
+                    necessitatibus voluptatum? Enim, itaque dignissimos quia.
+                </p>
             </div>
 
+            <div class="clear margin"></div>
+
             <!-- experiencia 2-->
-            <div class="cargo-empresa">
-                <p class="subtitulo">Google</p>
-                <p>2013-2014</p>
+            <div class="cargo_empresa">
+                <p class="subsubtitulo">Google</p>
+                <p class="subsubsubtitulo">2013-2014</p>
             </div>
-            <div class="cargo-descripcion">
-                <p class="subtitulo">Front-end developer / php programmer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="cargo_descripcion">
+                <p class="subsubtitulo">
+                    Front-end developer / php programmer
+                </p>
+                <p class="cuerpo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ullam, et, illum perferendis veritatis velit sunt similique
+                    qui magni totam harum tempore eius laboriosam accusantium
+                    necessitatibus voluptatum? Enim, itaque dignissimos quia.
+                </p>
             </div>
         </section>
 
         <!-- Columna 2 -->
-        <section class="cell-40">
+        <!-- Este cell es un div porque contiene 2 sections dentro -->
+        <div class="cell-40">
             <section class="idiomas">
-                <h3>// IDIOMAS</h3>
-                <p>Inglés</p>
-                <p>Español</p>
+                <p class="subtitulo">// IDIOMAS</p>
+
+                <!-- Idioma 1-->
+                <div class="idioma_bloque">
+                    <p class="item">Inglés</p>
+                    <div class="stars">
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star gray"></i>
+                        <i class="fa fa-star gray"></i>
+                    </div>
+                </div>
+
+                <!-- Idioma 2-->
+                <div class="idioma_bloque">
+                    <p class="item">Español</p>
+                    <div class="stars">
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star red"></i>
+                        <i class="fa fa-star gray"></i>
+                    </div>
+                </div>
             </section>
 
             <section class="hobbies">
-                <h3>// HOBBIES</h3>
-                <p>Fotografía</p>
-                <p>Deporte</p>
-                <p>Música</p>
+                <p class="subtitulo">// HOBBIES</p>
+                <p class="item">Fotografía</p>
+                <p class="item">Deporte</p>
+                <p class="item">Música</p>
             </section>
-        </section>
+        </div>
     </div>
 
-</body>
+    <footer>
+        <div class="line"></div>
+        <p class="cuerpo">Curso desarrollo Frontend 2015</p>
+    </footer>
+
 </div>
+</body>
 </html>

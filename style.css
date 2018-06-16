@@ -1,20 +1,17 @@
 /* GRILLA CONFIG *************************************************************/
 .row {
-    box-sizing: border-box;
     clear: both;
     overflow: hidden;
 }
 
 .cell-60 {
     float: left;
-    box-sizing: border-box;
 
     width: 60%;
 }
 
 .cell-40 {
     float: left;
-    box-sizing: border-box;
 
     width: 40%;
 }
@@ -22,133 +19,233 @@
 /* GENERAL *******************************************************************/
 body {
     margin: 0px;
-    /*padding: 100px 150px;*/
 
     background-color: #EDEDED;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+p {
+    margin: 0;
+}
+
+p.titulo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p.subtitulo {
+    margin-bottom: 15px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #EF553E;
+}
+
+p.subsubtitulo {
+    font-weight: bold;
+}
+
+p.subsubsubtitulo {
+    font-size: 12px;
+    color: #A3A3A3;
+}
+
+p.item {
+    display: inline-block;
 }
 
 p span {
     color: #EF553E;
 }
 
-p.titulo {
-    font-size: 20px;
-}
-
-p.subtitulo {
-    font-weight: bold;
-}
-
-h3 {
-    margin-left: 10px;
-    color: #EF553E;
-}
-
-.container {
-    margin: 100px 150px;
+div.container {
+    margin: 10% 14%;
     background-color: #FFF;
 }
 
+div.margin {
+    margin-top: 10px;
+}
+
+div.clear {
+    clear: both;
+}
 
 /* HEADER ********************************************************************/
-header {
-    box-sizing: border-box;
-
-    text-align: center;
-}
-
-/* TODO: HACER FLOTAR LA IMAGEN */
-/*
-header .transparente {
-    width: 100%;
-    height: 50px;
-
-    background-color: #EDEDED;
-}
-*/
-
-header .img {
+.img {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 40px;
     border-radius: 50%;
-    border: solid 5px #EDEDED;
+    border: solid 10px #EDEDED;
 
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
-header .linea_divisora {
-    margin-left: 5%;
-    width: 90%;
-    height: 5px;
+header {
+    padding-top: 150px;
+    text-align: center;
+}
 
-    background-color: #EDEDED;
+header .double_line {
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    border-top: double 5px #EDEDED;
 }
 
 /* ACERCA *********************************************************************/
-.acerca {
+section.acerca {
     text-align: justify;
 }
 
-.acerca p {
-    margin: 10px;
-}
 /* CONTACTO *******************************************************************/
 /* EDUCACIÓN ******************************************************************/
-.educacion .bloque_educacion {
-    box-sizing: border-box;
+section.educacion {
+    padding-right: 0;
 }
-
-.educacion .bloque_educacion p {
-    margin: 0;
-}
-.educacion .bloque_educacion div {
-    display: inline-block;
-}
-.educacion .bloque_educacion .estudio_anno {
+section.educacion p.estudio_anno {
     float: left;
-    width: 10%;
-    height: 100%;
-    background-color: #FFF;
+    width: 8%;
 }
 
-.educacion .bloque_educacion .estudio_descripcion {
+section.educacion div.estudio_descripcion {
+    float: left;
+
+    width: 92%;
+}
+
+section.educacion div.estudio_descripcion div.triangulo {
+    float: left;
+
+    margin-top: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #EDEDED;
+}
+
+section.educacion div.estudio_descripcion div.cuadrado {
     box-sizing: border-box;
-    width: 90%;
-    background-color: #EEE;
+    float: left;
+
+    padding: 10px;
+    border-bottom: solid 2px #DFDFDF;
+    width: 98%;
+    background-color: #EDEDED;
 }
 
 /* SKILLS *********************************************************************/
-.skills ul {
+section.skills ul {
     list-style: none;
     padding: 0;
-    width: 80%;
+    width: 90%;
 }
 
-.skills li {
-    padding-left: 5px;
+section.skills li {
+    box-sizing: border-box;
     margin-bottom: 5px;
+    padding: 2px 5px;
+
+    font-weight: bold;
     color: #FFF;
 }
-.skills li.per100 {
+
+section.skills li.per100 {
     width: 100%;
     background-color: #EF553E;
 }
 
-.skills li.per90 {
+section.skills li.per90 {
     width: 90%;
     background-color: #EF553E;
 }
 
-.skills li.per70 {
+section.skills li.per70 {
     width: 70%;
     background-color: #EF553E;
 }
 
-.skills li.per40 {
+section.skills li.per40 {
     width: 40%;
     background-color: #EF553E;
 }
 
-.skills li.per25 {
+section.skills li.per25 {
     width: 25%;
     background-color: #EF553E;
+}
+
+/* EXPERIENCIA ****************************************************************/
+section.experiencia div.cargo_empresa {
+    float: left;
+
+    width: 20%;
+}
+
+section.experiencia div.cargo_descripcion {
+    float: left;
+
+    width: 80%;
+
+    text-align: justify;
+}
+
+/* IDIOMAS ********************************************************************/
+section.idiomas div.idioma_bloque{
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #EDEDED;
+    padding-bottom: 5px;
+}
+
+
+
+section.idiomas div.stars{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+section.idiomas i.red {
+    color: #F70909;
+}
+
+section.idiomas i.gray {
+    color: #7D7D7D;
+}
+
+/* HOBBIES ********************************************************************/
+section.hobbies p.item {
+    padding: 5px;
+
+    background-color: #A85264;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/* FOOTER *********************************************************************/
+footer {
+    text-align: right;
+}
+
+footer p.cuerpo {
+    margin-right: 1%;
+    padding-bottom: 15px;
+
+    color: #666;
+}
+footer .line {
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    border-top: solid 2px #EDEDED;
 }
