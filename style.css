@@ -79,18 +79,19 @@ div.clear {
 /* HEADER ********************************************************************/
 .img {
     position: absolute;
-    left: 50%;
-    margin-left: -100px;
     top: 40px;
+    left: 50%;
+
+    margin-left: -100px;
     border-radius: 50%;
     border: solid 10px #EDEDED;
 
-    width: 200px;
+    max-width: 200px;
     height: auto;
 }
 
 header {
-    padding-top: 150px;
+    padding-top: 180px;
     text-align: center;
 }
 
@@ -110,8 +111,10 @@ section.acerca {
 /* CONTACTO *******************************************************************/
 /* EDUCACIÓN ******************************************************************/
 section.educacion {
+    box-sizing: border-box;
     padding-right: 0;
 }
+
 section.educacion p.estudio_anno {
     float: left;
     width: 8%;
@@ -120,10 +123,12 @@ section.educacion p.estudio_anno {
 section.educacion div.estudio_descripcion {
     float: left;
 
-    width: 92%;
+    margin-left: 2%;
+    width: 90%;
 }
 
 section.educacion div.estudio_descripcion div.triangulo {
+    width: 0;
     float: left;
 
     margin-top: 5px;
@@ -138,7 +143,7 @@ section.educacion div.estudio_descripcion div.cuadrado {
 
     padding: 10px;
     border-bottom: solid 2px #DFDFDF;
-    width: 98%;
+    width: 96%;
     background-color: #EDEDED;
 }
 
@@ -249,3 +254,7 @@ footer .line {
     margin-left: 1%;
     border-top: solid 2px #EDEDED;
 }
+
+/* BREAKPOINT MEDIUM */
+/* TODO: tablet version */
+/* TODO: mobile version */
