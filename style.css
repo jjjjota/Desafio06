@@ -272,15 +272,14 @@ footer .line {
     }
 
     div.container {
-        margin: 10% 4%;
+        margin: 10% 2%;
     }
 
     header {
         padding-top: 130px;
     }
 
-    section.educacion p.estudio_anno {
-        box-sizing: border-box;
+    section.educacion div.estudio_anno {
         padding-left: 20px;
         width: 100%;
     }
